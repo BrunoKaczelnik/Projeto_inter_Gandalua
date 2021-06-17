@@ -302,15 +302,228 @@ h3 {
 	width: 150px;
 	height: 40px;
 	text-decoration: none;
-	background: #00bfff;
+	background: #33a9a5;
 	color: #e5eef3;
 	border: 0em;
-	text-shadow: 2px 2px 2px rgba(21, 11, 68, 0.5);
+	text-shadow: 2px 2px 2px #33a9a5;
 	border-radius: 1em;
-	box-shadow: 2px 2px 0 1px rgb(74, 47, 228);
+	box-shadow: 2px 2px 0 1px #21726f;
 }
 
 .botao2:active {
-	box-shadow: 0 0 0 0 #41acee, inset 3px 3px 3px #41acee;
+	box-shadow: 0 0 0 0 #21726f, inset 3px 3px 3px #21726f;
 	transform: translate(3px, 3px);
+}
+
+----------------------------------------------------------------------
+
+iframe.tmblr-iframe {
+    z-index: 99999999999999!important;
+    top: 0!important;
+    right: 0!important;
+    opacity: 0.4;
+    filter: invert(1) contrast(150%);
+    -webkit-filter: invert(1) contrast(150%);
+    -o-filter: invert(1) contrast(150%);
+    -moz-filter: invert(1) contrast(150%);
+    -ms-filter: invert(1) contrast(150%);
+    transform: scale(0.5);
+    transform-origin: 100% 0;
+    -webkit-transform: scale(.7);
+    -webkit-transform-origin: 100% 0;
+    -o-transform: scale(.7);
+    -o-transform-origin: 100% 0;
+    -moz-transform: scale(.7);
+    -moz-transform-origin: 100% 0;
+    -ms-transform: scale(.7);
+    -ms-transform-origin: 100% 0;
+}
+ 
+#s-m-t-tooltip { 
+    max-width:150px; 
+    background:#eee; 
+    padding:1px 6px 2px 6px; 
+    z-index:999; 
+    margin:20px;
+}
+ 
+body {
+    background:#fff;
+    font-family: 'Lato', sans-serif;
+    font-size:12px;
+    line-height:180%;
+    color:#474747;
+    margin:0;
+    padding:0;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+}
+ 
+a {
+    text-decoration:none;
+    color:#474747;
+}
+ 
+#content {
+    height:100vw;
+    width:100%;
+    position:fixed;
+}
+ 
+#left {
+    width:50vw;
+    position:absolute;
+    left:0px;
+    height:100vh;
+    background:#fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ 
+}
+ 
+#right {
+    width:45vw;
+    height:55vh;
+    background:#ffffff;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	border-radius: 50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+ 
+#right-txt {
+    width:30vw;
+}
+ 
+#tagline, #title, #subtitle {
+    text-transform:uppercase;
+}
+ 
+#tagline {
+    font-weight:700;
+    font-size:16px;
+    letter-spacing:4px;
+}
+ 
+#title {
+    margin-top:10px;
+    font-weight:900;
+    font-size:35px;
+    letter-spacing:6px;
+}
+ 
+#line {
+    margin-top:10px;
+    width:50px;
+    height:5px;
+    background:#474747;
+}
+ 
+#short-descript {
+    font-size:16px;
+    margin-top:15px;
+    line-height:200%;
+    text-align:justify;
+	max-height:200px;
+	overflow:auto;
+}
+ 
+#subtitle {
+    font-weight:700;
+    letter-spacing:4px;
+    font-size:23px;
+    margin-top:10px;
+}
+ 
+#about {
+    font-size:16px;
+    margin-top:5px;
+    line-height:200%;
+    text-align:justify;
+    max-height:300px;
+    overflow:auto;
+}
+ 
+::-webkit-scrollbar {
+    width:17px;
+    height:17px;
+    background-color:rgb(255,255,255);
+}
+ 
+::-webkit-scrollbar-track {
+    border:8px solid #EDEDED;
+    background-color:#aaa;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border:8px solid #EDEDED;
+    background-color:#000;
+    min-height:24px;
+    min-width:24px;
+}
+ 
+#icon {
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:300px;
+}
+ 
+#icontxt {
+    font-size:16px;
+    margin:25px 0px 40px 0px;
+    line-height:200%;
+    width:300px;
+	max-height:300px;
+	overflow:auto;
+    text-align:center;
+}
+ 
+#bar {
+    width:200px;
+    height:1px;
+    background:#474747;
+    margin:auto;
+}
+ 
+#bar #links {
+    position:absolute;
+    display:flex;
+    flex-direction:row;
+    background:#fff;
+    margin-top:-6px;
+}
+ 
+.circle {
+    margin-right:10px;
+    width:10px;
+    height:10px;
+    border:1px solid #33a9a5;
+    border-radius:7%;
+    -webkit-border-radius:50%:
+}
+
+ 
+.phc a{
+    text-align:center;
+    background:#fff;
+    position:fixed;
+    left:25px;
+    bottom:25px;
+    font-size:11px;
+    font-family:calibri;
+    color:#000;
+    line-height:100%;
+    z-index:999;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    padding:5px 8px 6px 8px;
 }
